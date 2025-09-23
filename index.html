@@ -34,18 +34,12 @@
                     },
                     animation: {
                         'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-                        'background-pan': 'backgroundPan 15s linear infinite',
                     },
                     keyframes: {
                         fadeInUp: {
                             '0%': { opacity: '0', transform: 'translateY(20px)' },
                             '100%': { opacity: '1', transform: 'translateY(0)' },
                         },
-                        backgroundPan: {
-                            '0%': { 'background-position': '0% 50%' },
-                            '50%': { 'background-position': '100% 50%' },
-                            '100%': { 'background-position': '0% 50%' },
-                        }
                     }
                 }
             }
@@ -93,7 +87,7 @@
     <header class="bg-primary-dark/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-black/20">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#home" class="text-xl md:text-2xl font-bold font-code text-white hover:text-accent transition-colors duration-300 page-link">
-                Safe Harbor<span class="text-accent">Securities</span>
+                Safe Harbor <span class="text-accent"> Securities</span>
             </a>
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="nav-link text-light-slate hover:text-accent transition-colors duration-300 page-link active">Home</a>
@@ -119,7 +113,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
+    <main class="container mx-auto px-6 py-12 md:py-20">
 
         <!-- Home Section -->
         <section id="home" class="section active">
@@ -127,7 +121,7 @@
                 <h1 id="main-headline" class="text-4xl md:text-6xl font-bold font-code text-white leading-tight">
                     <span class="decryption-target">Your Digital Fortress,</span><br class="hidden md:block"/> <span class="text-accent decryption-target">Fortified.</span>
                 </h1>
-                <p class="mt-6 text-lg md:text-xl text-slate-gray max-w-2xl">
+                <p class="mt-6 text-lg md:text-xl text-slate-gray max-w-2xl mx-auto">
                     Proactive, AI-driven cybersecurity solutions to defend your business from the evolving landscape of digital threats. We are your shield in the digital age.
                 </p>
                 <a href="#contact" class="mt-8 bg-accent text-primary-dark font-bold py-3 px-8 rounded-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 page-link">
@@ -136,26 +130,26 @@
             </div>
             
             <!-- Services Overview -->
-            <div class="mt-20">
+            <div class="mt-24">
                 <h2 class="text-3xl font-bold font-code text-center text-white">Our Core Services</h2>
                 <div class="mt-12 grid md:grid-cols-3 gap-8">
                     <!-- Service Card 1 -->
-                    <div class="bg-secondary-dark p-8 rounded-lg border border-slate-gray/20 hover:border-accent/50 transition-all duration-300 transform hover:-translate-y-2 text-center">
-                        <i data-feather="compass" class="w-12 h-12 text-accent mx-auto mb-4"></i>
+                    <div class="bg-secondary-dark p-8 rounded-lg border border-slate-gray/20 hover:border-accent/50 transition-all duration-300 transform hover:-translate-y-2 text-center group">
+                        <i data-feather="compass" class="w-12 h-12 text-accent mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"></i>
                         <h3 class="text-2xl font-bold font-code text-accent">Penetration Testing</h3>
                         <p class="mt-4 text-slate-gray">Simulate real-world attacks to uncover critical vulnerabilities in your network, applications, and infrastructure before malicious actors do.</p>
                         <a href="#services" class="mt-6 inline-block text-accent font-semibold page-link">Learn More &rarr;</a>
                     </div>
                     <!-- Service Card 2 -->
-                    <div class="bg-secondary-dark p-8 rounded-lg border border-slate-gray/20 hover:border-accent/50 transition-all duration-300 transform hover:-translate-y-2 text-center">
-                        <i data-feather="shield" class="w-12 h-12 text-accent mx-auto mb-4"></i>
+                    <div class="bg-secondary-dark p-8 rounded-lg border border-slate-gray/20 hover:border-accent/50 transition-all duration-300 transform hover:-translate-y-2 text-center group">
+                        <i data-feather="shield" class="w-12 h-12 text-accent mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"></i>
                         <h3 class="text-2xl font-bold font-code text-accent">Managed Security (MDR)</h3>
                         <p class="mt-4 text-slate-gray">24/7/365 threat monitoring, detection, and response powered by our elite team of security analysts and cutting-edge AI.</p>
                          <a href="#services" class="mt-6 inline-block text-accent font-semibold page-link">Learn More &rarr;</a>
                     </div>
                     <!-- Service Card 3 -->
-                    <div class="bg-secondary-dark p-8 rounded-lg border border-slate-gray/20 hover:border-accent/50 transition-all duration-300 transform hover:-translate-y-2 text-center">
-                         <i data-feather="briefcase" class="w-12 h-12 text-accent mx-auto mb-4"></i>
+                    <div class="bg-secondary-dark p-8 rounded-lg border border-slate-gray/20 hover:border-accent/50 transition-all duration-300 transform hover:-translate-y-2 text-center group">
+                         <i data-feather="briefcase" class="w-12 h-12 text-accent mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"></i>
                         <h3 class="text-2xl font-bold font-code text-accent">Cyber Consulting</h3>
                         <p class="mt-4 text-slate-gray">Strategic guidance from vCISOs to build a robust security posture, achieve compliance, and align security with your business goals.</p>
                          <a href="#services" class="mt-6 inline-block text-accent font-semibold page-link">Learn More &rarr;</a>
@@ -164,63 +158,83 @@
             </div>
 
             <!-- Ransomware Section -->
-            <div class="mt-24 grid md:grid-cols-2 gap-16 items-center">
-                <div class="bg-secondary-dark p-8 rounded-lg">
+            <div class="mt-24 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div class="bg-secondary-dark/50 p-8 rounded-lg">
                     <img src="https://placehold.co/500x300/0D1B2A/41E0D0?text=Ransomware+Defense" alt="Ransomware Defense Graphic" class="rounded-lg shadow-lg">
                 </div>
                 <div>
                     <h3 class="text-3xl font-bold font-code text-accent">Proactive Ransomware Defense</h3>
-                    <p class="mt-4 text-slate-gray leading-relaxed">Ransomware is more than just a threat; it's a business-ending event. We deploy a multi-layered defense strategy that focuses on prevention, immutable backups, and rapid recovery. Our solutions are designed to make your systems resilient to attack and ensure business continuity, even in a worst-case scenario.</p>
+                    <p class="mt-4 text-slate-gray leading-relaxed max-w-prose">Ransomware is more than just a threat; it's a business-ending event. We deploy a multi-layered defense strategy that focuses on prevention, immutable backups, and rapid recovery. Our solutions are designed to make your systems resilient to attack and ensure business continuity, even in a worst-case scenario.</p>
                 </div>
             </div>
 
             <!-- AI Solutions Section -->
-            <div class="mt-24 grid md:grid-cols-2 gap-16 items-center">
-                <div class="md:order-2 bg-secondary-dark p-8 rounded-lg">
+            <div class="mt-24 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div class="md:order-2 bg-secondary-dark/50 p-8 rounded-lg">
                     <img src="https://placehold.co/500x300/0D1B2A/E0E1DD?text=AI+Solutions" alt="AI Security Solutions Graphic" class="rounded-lg shadow-lg">
                 </div>
                 <div class="md:order-1">
                     <h3 class="text-3xl font-bold font-code text-accent">AI-Powered Security Intelligence</h3>
-                    <p class="mt-4 text-slate-gray leading-relaxed">In the age of automated attacks, you need an intelligent defense. We leverage advanced AI and Machine Learning to analyze threat patterns, predict attacker behavior, and automate responses. This allows us to detect anomalies and neutralize sophisticated threats faster than human-led teams ever could.</p>
+                    <p class="mt-4 text-slate-gray leading-relaxed max-w-prose">In the age of automated attacks, you need an intelligent defense. We leverage advanced AI and Machine Learning to analyze threat patterns, predict attacker behavior, and automate responses. This allows us to detect anomalies and neutralize sophisticated threats faster than human-led teams ever could.</p>
+                </div>
+            </div>
+
+            <!-- Security Awareness Training Section -->
+            <div class="mt-24">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold font-code text-white">Strengthening Your First Line of Defense</h2>
+                    <p class="mt-4 text-lg text-slate-gray max-w-3xl mx-auto">Technology is only part of the solution. Our Security Awareness Training programs transform your workforce from a potential target into a proactive and vigilant human firewall.</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Training Topic Card -->
+                    <div class="bg-secondary-dark p-6 rounded-lg text-center border border-transparent hover:border-accent/50 transition-colors duration-300">
+                        <i data-feather="mail" class="w-10 h-10 text-accent mx-auto mb-4"></i>
+                        <h4 class="font-bold font-code text-white">Phishing & Scams</h4>
+                        <p class="mt-2 text-sm text-slate-gray">Train employees to recognize and report sophisticated phishing, smishing, and vishing attempts.</p>
+                    </div>
+                    <!-- Training Topic Card -->
+                    <div class="bg-secondary-dark p-6 rounded-lg text-center border border-transparent hover:border-accent/50 transition-colors duration-300">
+                        <i data-feather="lock" class="w-10 h-10 text-accent mx-auto mb-4"></i>
+                        <h4 class="font-bold font-code text-white">Ransomware Prevention</h4>
+                        <p class="mt-2 text-sm text-slate-gray">Educate on behaviors that lead to ransomware, from malicious links to unsafe software installation.</p>
+                    </div>
+                    <!-- Training Topic Card -->
+                    <div class="bg-secondary-dark p-6 rounded-lg text-center border border-transparent hover:border-accent/50 transition-colors duration-300">
+                        <i data-feather="search" class="w-10 h-10 text-accent mx-auto mb-4"></i>
+                        <h4 class="font-bold font-code text-white">OSINT Awareness</h4>
+                        <p class="mt-2 text-sm text-slate-gray">Show how attackers use public data (OSINT) to craft attacks and how to manage digital footprints.</p>
+                    </div>
+                    <!-- Training Topic Card -->
+                    <div class="bg-secondary-dark p-6 rounded-lg text-center border border-transparent hover:border-accent/50 transition-colors duration-300">
+                        <i data-feather="shield" class="w-10 h-10 text-accent mx-auto mb-4"></i>
+                        <h4 class="font-bold font-code text-white">Secure Practices</h4>
+                        <p class="mt-2 text-sm text-slate-gray">Instill best practices for password hygiene, data handling, and mobile security to build a strong culture.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- About Us Section -->
         <section id="about" class="section">
-            <h2 class="text-4xl font-bold font-code text-center text-white">The Minds Behind Your Security</h2>
-            <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">We are a collective of veteran ethical hackers, security architects, and threat intelligence experts dedicated to making the digital world a safer place.</p>
+            <h2 class="text-4xl font-bold font-code text-center text-white">The Mind Behind Your Security</h2>
+            <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">A veteran-led consultancy dedicated to providing strategic, high-impact cybersecurity leadership to protect and empower your business.</p>
             
-            <div class="mt-16 grid md:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h3 class="text-3xl font-bold font-code text-accent">Our Mission</h3>
-                    <p class="mt-4 text-slate-gray leading-relaxed">In an era where a single vulnerability can compromise an entire enterprise, our mission is to provide impenetrable security solutions that are both advanced and accessible. We believe that every business, regardless of size, deserves enterprise-grade protection. We partner with our clients, becoming an extension of their team to build a resilient and proactive defense against cyber threats.</p>
+             <div class="mt-20 max-w-5xl mx-auto grid md:grid-cols-3 gap-8 md:gap-12 items-center">
+                <div class="md:col-span-1">
+                    <img src="https://placehold.co/400x400/1B263B/E0E1DD?text=P.N." alt="Portrait of Patrick Nagel" class="w-full object-cover rounded-lg shadow-lg">
                 </div>
-                <div class="bg-secondary-dark p-8 rounded-lg">
-                    <img src="https://placehold.co/500x300/0D1B2A/41E0D0?text=Our+Team" alt="Safe Harbor Securities Team" class="rounded-lg shadow-lg">
-                </div>
-            </div>
-
-            <div class="mt-20">
-                <h3 class="text-3xl font-bold font-code text-center text-white">Meet The Leadership</h3>
-                <div class="mt-12 grid sm:grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Team Member Card -->
-                    <div class="text-center">
-                        <img src="https://placehold.co/200x200/1B263B/E0E1DD?text=P.N." alt="Portrait of Patrick Nagel in his signature art style" class="w-32 h-32 rounded-full mx-auto shadow-lg border-2 border-accent">
-                        <h4 class="mt-4 text-xl font-bold text-white">Patrick Nagel</h4>
-                        <p class="text-accent font-code">Chief Executive Officer</p>
-                    </div>
-                    <!-- Team Member Card -->
-                    <div class="text-center">
-                        <img src="https://placehold.co/200x200/1B263B/E0E1DD?text=P.N." alt="Portrait of Patrick Nagel in his signature art style" class="w-32 h-32 rounded-full mx-auto shadow-lg border-2 border-accent">
-                        <h4 class="mt-4 text-xl font-bold text-white">Patrick Nagel</h4>
-                        <p class="text-accent font-code">Chief Technology Officer</p>
-                    </div>
-                    <!-- Team Member Card -->
-                    <div class="text-center">
-                        <img src="https://placehold.co/200x200/1B263B/E0E1DD?text=P.N." alt="Portrait of Patrick Nagel in his signature art style" class="w-32 h-32 rounded-full mx-auto shadow-lg border-2 border-accent">
-                        <h4 class="mt-4 text-xl font-bold text-white">Patrick Nagel</h4>
-                        <p class="text-accent font-code">Senior Security Engineer</p>
+                <div class="md:col-span-2 bg-secondary-dark p-8 rounded-lg">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">Patrick Nagel</h3>
+                        <p class="text-accent font-code text-lg">Founder & CEO</p>
+                        <blockquote class="mt-6 text-slate-gray space-y-4 leading-relaxed border-l-4 border-accent pl-6 italic">
+                            <p>
+                                "At Safe Harbor Securities LLC, my mission has been to deliver robust cybersecurity and compliance solutions, ensuring clients' data, assets, and networks are ironclad against cyber threats. With over 4 years at the helm, our team excels in network architecture design, incident detection, and compliance audits, with a focus on SOC ISO27K, HIPAA-HITRUST and PCI-DSS standards."
+                            </p>
+                            <p>
+                                "Leveraging tools such as Terraform, Ansible and Chef for IaC, combined with our expertise in cloud-native security, we empower organizations to navigate the complexities of cybersecurity. Our approach integrates open-source and proprietary software for detection and response, establishing Safe Harbor Securities as a bastion of security in an era of digital vulnerabilities."
+                            </p>
+                        </blockquote>
                     </div>
                 </div>
             </div>
@@ -232,66 +246,120 @@
             <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Comprehensive solutions tailored to your unique risk profile and business needs.</p>
             
             <div class="mt-16 space-y-12">
-                <!-- Service Detail -->
-                <div class="p-8 bg-secondary-dark rounded-lg flex flex-col md:flex-row gap-8 items-start border border-transparent hover:border-accent/30 transition-all">
-                    <div class="w-full md:w-1/3">
-                        <h3 class="text-3xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="target" class="w-8 h-8"></i>Penetration Testing</h3>
-                        <p class="text-slate-gray mt-2 pl-12">Uncover vulnerabilities before they're exploited.</p>
-                    </div>
-                    <div class="w-full md:w-2/3">
-                        <p class="text-light-slate">Our certified ethical hackers use advanced techniques to simulate sophisticated cyberattacks on your infrastructure. We provide a detailed report with actionable insights to remediate weaknesses and strengthen your defenses.</p>
-                        <ul class="mt-4 list-disc list-inside text-slate-gray space-y-2">
-                            <li>Network, Web App, and Mobile App Testing</li>
-                            <li>Social Engineering & Phishing Simulations</li>
-                            <li>Cloud Security Assessments (AWS, Azure, GCP)</li>
-                            <li>Compliance-driven Testing (PCI-DSS, HIPAA)</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Service Detail -->
-                <div class="p-8 bg-secondary-dark rounded-lg flex flex-col md:flex-row gap-8 items-start border border-transparent hover:border-accent/30 transition-all">
-                    <div class="w-full md:w-1/3">
-                        <h3 class="text-3xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="shield" class="w-8 h-8"></i>Managed Detection & Response</h3>
-                        <p class="text-slate-gray mt-2 pl-12">24/7 vigilance for your digital assets.</p>
-                    </div>
-                    <div class="w-full md:w-2/3">
-                        <p class="text-light-slate">Our Security Operations Center (SOC) acts as your dedicated cybersecurity team. We leverage AI and machine learning to analyze threats in real-time, providing rapid incident response to contain and neutralize attacks, minimizing impact and downtime.</p>
-                         <ul class="mt-4 list-disc list-inside text-slate-gray space-y-2">
-                            <li>Continuous Endpoint and Network Monitoring</li>
-                            <li>Proactive Threat Hunting</li>
-                            <li>Log Management and SIEM</li>
-                            <li>Incident Response and Forensics</li>
-                        </ul>
+                <!-- Service Detail Card: AI Threat Counteroperations -->
+                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 overflow-hidden">
+                    <div class="p-8 flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-1/3">
+                            <h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="cpu" class="w-8 h-8 flex-shrink-0"></i>AI Threat Counteroperations</h3>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <p class="text-light-slate max-w-prose">As organizations deploy AI and Large Language Models (LLMs), a new attack surface has emerged. We specialize in defending against next-generation threats targeting your intelligent systems, protecting the integrity of your AI/ML pipelines.</p>
+                            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-slate-gray">
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Adversarial AI Red Teaming</li>
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>LLM Security Audits</li>
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Deepfake Detection</li>
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>AI/ML Pipeline Security</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!-- Service Detail -->
-                <div class="p-8 bg-secondary-dark rounded-lg flex flex-col md:flex-row gap-8 items-start border border-transparent hover:border-accent/30 transition-all">
-                    <div class="w-full md:w-1/3">
-                        <h3 class="text-3xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="briefcase" class="w-8 h-8"></i>Cybersecurity Consulting</h3>
-                        <p class="text-slate-gray mt-2 pl-12">Strategic expertise to build resilience.</p>
+
+                <!-- Service Detail Card: Penetration Testing -->
+                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 overflow-hidden">
+                    <div class="p-8 flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-1/3">
+                            <h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="target" class="w-8 h-8 flex-shrink-0"></i>Penetration Testing</h3>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <p class="text-light-slate max-w-prose">Our certified ethical hackers use advanced techniques to simulate sophisticated cyberattacks, providing a detailed report with actionable insights to remediate weaknesses and strengthen your defenses.</p>
+                            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-slate-gray">
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Network & Web App Testing</li>
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Social Engineering</li>
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Cloud Security Assessments</li>
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Compliance-driven Testing</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="w-full md:w-2/3">
-                        <p class="text-light-slate">Our virtual CISO (vCISO) services provide the strategic leadership you need to navigate the complex world of cybersecurity. We help you develop security roadmaps, create effective policies, and ensure you meet regulatory compliance standards.</p>
-                        <p class="mt-4 text-light-slate font-semibold">OWASP & Secure Development: We integrate the OWASP Top 10 framework into your development lifecycle. Our experts provide guidance and testing to prevent common web application vulnerabilities, ensuring your code is secure from the ground up.</p>
-                        <p class="mt-4 text-light-slate font-semibold">Open-Source Intelligence (OSINT): Knowledge is power. We use advanced OSINT techniques to discover what attackers can learn about you from public sources. This proactive approach helps identify potential attack vectors and exposed data before they can be exploited.</p>
-                        <p class="mt-4 text-light-slate font-semibold">Governance, Risk & Compliance (GRC): We help you navigate the complex web of industry regulations like ISO 27001, SOC 1, and SOC 2. Our experts work with you to build a comprehensive GRC framework that aligns security with business objectives, manages risk effectively, and ensures you're always audit-ready.</p>
-                        <p class="mt-4 text-light-slate font-semibold">PCI DSS Compliance: For businesses that handle cardholder data, achieving and maintaining PCI DSS compliance is non-negotiable. We provide end-to-end guidance, from gap analysis and remediation to helping you prepare for your Report on Compliance (ROC).</p>
-                        <p class="mt-4 text-light-slate font-semibold">Your employees are your first line of defense. Our SATE programs go beyond standard training modules, using engaging, interactive content and realistic phishing simulations to empower your team. We turn your staff from potential liabilities into a proactive, security-conscious workforce, significantly reducing the risk of human error.</p>
-                         <ul class="mt-4 list-disc list-inside text-slate-gray space-y-2">
-                            <li>Security Program & Strategy Development</li>
-                            <li>GRC, ISO 27001 & SOC 2 Consulting</li>
-                            <li>PCI DSS Compliance Consulting</li>
-                            <li>OWASP & Secure SDLC Guidance</li>
-                            <li>Open-Source Intelligence (OSINT) Analysis</li>
-                            <li>Security Awareness Training & Education (SATE)</li>
-                        </ul>
+                </div>
+
+                <!-- Service Detail Card: Managed Detection & Response -->
+                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 overflow-hidden">
+                    <div class="p-8 flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-1/3">
+                            <h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="shield" class="w-8 h-8 flex-shrink-0"></i>Managed Detection & Response</h3>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <p class="text-light-slate max-w-prose">Our Security Operations Center (SOC) acts as your dedicated 24/7 cybersecurity team. We leverage AI to analyze threats in real-time, providing rapid incident response to contain and neutralize attacks.</p>
+                            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-slate-gray">
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>24/7 Endpoint & Network Monitoring</li>
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Proactive Threat Hunting</li>
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>SIEM & Log Management</li>
+                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Incident Response & Forensics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Detail Card: Cybersecurity Consulting -->
+                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 overflow-hidden">
+                    <div class="p-8">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="w-full md:w-1/3">
+                                <h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="briefcase" class="w-8 h-8 flex-shrink-0"></i>Cybersecurity Consulting</h3>
+                            </div>
+                            <div class="w-full md:w-2/3">
+                                <p class="text-light-slate max-w-prose">Our virtual CISO (vCISO) services provide the strategic leadership you need to navigate the complex world of cybersecurity. We help you develop security roadmaps, create effective policies, and ensure you meet regulatory compliance standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-8 px-8 pt-6 border-t border-slate-gray/20 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                        <!-- Consulting Sub-Service -->
+                        <div class="flex items-start gap-4">
+                            <i data-feather="clipboard" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white">Governance, Risk & Compliance (GRC)</h4>
+                                <p class="mt-1 text-slate-gray text-sm">Navigate regulations like ISO 27001 and SOC 2, building a framework that aligns security with business objectives and keeps you audit-ready.</p>
+                            </div>
+                        </div>
+                        <!-- Consulting Sub-Service -->
+                        <div class="flex items-start gap-4">
+                            <i data-feather="credit-card" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white">PCI DSS Compliance</h4>
+                                <p class="mt-1 text-slate-gray text-sm">For businesses handling cardholder data, we provide end-to-end guidance, from gap analysis to your Report on Compliance (ROC).</p>
+                            </div>
+                        </div>
+                        <!-- Consulting Sub-Service -->
+                        <div class="flex items-start gap-4">
+                            <i data-feather="code" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white">OWASP & Secure Development</h4>
+                                <p class="mt-1 text-slate-gray text-sm">Integrate the OWASP Top 10 into your development lifecycle to ensure your code is secure from the ground up.</p>
+                            </div>
+                        </div>
+                        <!-- Consulting Sub-Service -->
+                        <div class="flex items-start gap-4">
+                            <i data-feather="search" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white">Open-Source Intelligence (OSINT)</h4>
+                                <p class="mt-1 text-slate-gray text-sm">Discover your public exposure, identifying potential attack vectors and exposed data before attackers can exploit them.</p>
+                            </div>
+                        </div>
+                        <!-- Consulting Sub-Service -->
+                        <div class="flex items-start gap-4">
+                            <i data-feather="users" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white">Security Awareness Training (SATE)</h4>
+                                <p class="mt-1 text-slate-gray text-sm">Our engaging training and phishing simulations turn your employees into a proactive line of defense.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Blog Section -->
-        <section id="blog" class="section">
+		<section id="blog" class="section">
             <h2 class="text-4xl font-bold font-code text-center text-white">Threat Intelligence Feed</h2>
             <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Insights from the front lines of cybersecurity. Analysis, trends, and actionable advice from our experts.</p>
 
@@ -303,11 +371,11 @@
                     <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg">
                         <video class="w-full" controls poster="https://placehold.co/600x338/0D1B2A/41E0D0?text=Episode+1">
                             <!-- Add your .mp4 source here -->
-                            <source src="#" type="video/mp4">
+                            <source src="HumanHacking+AIThreats_YourFrontlineGuidetoCybersecurity.mp3" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="p-6">
-                            <p class="text-sm text-accent font-code">Episode 01</p>
+                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="mic" class="w-4 h-4"></i>Episode 01</p>
                             <h4 class="mt-1 text-xl font-bold text-white">The Rise of Adversarial AI</h4>
                             <p class="mt-2 text-slate-gray text-sm">We discuss how attackers are weaponizing AI and what businesses can do to prepare for the next wave of intelligent threats.</p>
                         </div>
@@ -316,11 +384,11 @@
                     <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg">
                          <video class="w-full" controls poster="https://placehold.co/600x338/0D1B2A/E0E1DD?text=Episode+2">
                             <!-- Add your .mp4 source here -->
-                            <source src="#" type="video/mp4">
+                            <source src="HumanHacking_TheExplodingCyberThreatandHowtoFightBack.mp3" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="p-6">
-                            <p class="text-sm text-accent font-code">Episode 02</p>
+                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="mic" class="w-4 h-4"></i>Episode 02</p>
                             <h4 class="mt-1 text-xl font-bold text-white">Securing the Human Element</h4>
                             <p class="mt-2 text-slate-gray text-sm">A conversation with a social engineering expert on the psychology of phishing and building a culture of security.</p>
                         </div>
@@ -335,7 +403,7 @@
                     <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">
                         <img src="https://placehold.co/600x400/0D1B2A/41E0D0?text=Analysis" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="p-6">
-                            <p class="text-sm text-accent font-code">Ransomware</p>
+                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="alert-triangle" class="w-4 h-4"></i>Ransomware</p>
                             <h3 class="mt-2 text-xl font-bold text-white">Anatomy of the "LockForge" Ransomware Attack</h3>
                             <p class="mt-3 text-slate-gray">A deep dive into the latest ransomware strain targeting mid-sized enterprises and how to defend against its unique TTPs.</p>
                             <a href="#" class="mt-4 inline-block font-semibold text-accent">Read More &rarr;</a>
@@ -345,7 +413,7 @@
                     <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">
                         <img src="https://placehold.co/600x400/0D1B2A/E0E1DD?text=Phishing" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="p-6">
-                            <p class="text-sm text-accent font-code">Social Engineering</p>
+                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="users" class="w-4 h-4"></i>Social Engineering</p>
                             <h3 class="mt-2 text-xl font-bold text-white">Beyond the Bait: The Rise of AI-Powered Phishing</h3>
                             <p class="mt-3 text-slate-gray">Cybercriminals are using generative AI to create hyper-realistic phishing emails. Learn to spot the new red flags.</p>
                             <a href="#" class="mt-4 inline-block font-semibold text-accent">Read More &rarr;</a>
@@ -355,7 +423,7 @@
                     <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">
                         <img src="https://placehold.co/600x400/0D1B2A/778DA9?text=Cloud+Security" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="p-6">
-                            <p class="text-sm text-accent font-code">Cloud Security</p>
+                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="cloud" class="w-4 h-4"></i>Cloud Security</p>
                             <h3 class="mt-2 text-xl font-bold text-white">Top 5 Misconfigurations in AWS That Lead to Breaches</h3>
                             <p class="mt-3 text-slate-gray">A checklist for cloud administrators to secure their AWS environments and avoid common, costly security mistakes.</p>
                             <a href="#" class="mt-4 inline-block font-semibold text-accent">Read More &rarr;</a>
@@ -371,29 +439,41 @@
             <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Ready to elevate your security posture? Reach out to our experts for a no-obligation consultation and vulnerability assessment.</p>
 
             <div class="mt-16 max-w-2xl mx-auto bg-secondary-dark p-8 rounded-lg border border-slate-gray/20">
-                <form>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="name" class="block text-sm font-code text-slate-gray">Full Name</label>
-                            <input type="text" id="name" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent">
+                <form id="contact-form" action="https://formspree.io/f/mblzrvew" method="POST">
+                    <div id="form-fields-container">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-code text-slate-gray">Full Name</label>
+                                <input type="text" id="name" name="Name" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" required>
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-code text-slate-gray">Company</label>
+                                <input type="text" id="company" name="Company" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent">
+                            </div>
                         </div>
-                        <div>
-                            <label for="company" class="block text-sm font-code text-slate-gray">Company</label>
-                            <input type="text" id="company" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent">
+                        <div class="mt-6">
+                            <label for="email" class="block text-sm font-code text-slate-gray">Email Address</label>
+                            <input type="email" id="email" name="Email" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" required>
+                        </div>
+                        <div class="mt-6">
+                            <label for="message" class="block text-sm font-code text-slate-gray">Message</label>
+                            <textarea id="message" name="Message" rows="4" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" placeholder="Tell us about your security challenges..." required></textarea>
+                        </div>
+                        <div class="mt-6 text-center">
+                            <button id="submit-button" type="submit" class="w-full md:w-auto bg-accent text-primary-dark font-bold py-3 px-12 rounded-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:scale-100">
+                                Send Message
+                            </button>
                         </div>
                     </div>
-                    <div class="mt-6">
-                        <label for="email" class="block text-sm font-code text-slate-gray">Email Address</label>
-                        <input type="email" id="email" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent">
+                     <div id="success-message" class="hidden text-center">
+                        <i data-feather="check-circle" class="w-16 h-16 text-accent mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-bold text-white">Thank You!</h3>
+                        <p class="mt-2 text-slate-gray">Your message has been sent. Our team will get back to you shortly.</p>
                     </div>
-                    <div class="mt-6">
-                        <label for="message" class="block text-sm font-code text-slate-gray">Message</label>
-                        <textarea id="message" rows="4" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" placeholder="Tell us about your security challenges..."></textarea>
-                    </div>
-                    <div class="mt-6 text-center">
-                        <button type="submit" class="w-full md:w-auto bg-accent text-primary-dark font-bold py-3 px-12 rounded-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105">
-                            Send Message
-                        </button>
+                     <div id="error-message" class="hidden text-center">
+                        <i data-feather="alert-triangle" class="w-16 h-16 text-red-500 mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-bold text-white">Submission Failed</h3>
+                        <p class="mt-2 text-slate-gray">Something went wrong. Please try again later or contact us directly.</p>
                     </div>
                 </form>
             </div>
@@ -533,6 +613,12 @@
             const mobileMenu = document.getElementById('mobile-menu');
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const decryptionTargets = document.querySelectorAll('.decryption-target');
+            const contactForm = document.getElementById('contact-form');
+            const formFieldsContainer = document.getElementById('form-fields-container');
+            const successMessage = document.getElementById('success-message');
+            const errorMessage = document.getElementById('error-message');
+            const submitButton = document.getElementById('submit-button');
+
 
             // Store original text for decryption targets
             decryptionTargets.forEach(target => {
@@ -576,6 +662,56 @@
 
             mobileMenuButton.addEventListener('click', function() {
                 mobileMenu.classList.toggle('hidden');
+            });
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent the default form submission
+
+                const form = e.target;
+                const data = new FormData(form);
+
+                submitButton.disabled = true;
+                submitButton.innerText = 'Sending...';
+
+                // Use fetch() to send the data to Formspree
+                fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json' // Tells Formspree to reply with JSON
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        // Success! ✅
+                        form.reset(); // clear the form fields
+                        formFieldsContainer.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
+                        feather.replace(); // Re-render icons if needed
+                    } else {
+                        // Server returned an error 😥
+                        response.json().then(data => {
+                            if (Object.hasOwn(data, 'errors')) {
+                            // This can display more specific errors from Formspree if you want
+                            console.error(data.errors.map(error => error.message).join(", "));
+                            }
+                            formFieldsContainer.classList.add('hidden');
+                            errorMessage.classList.remove('hidden');
+                            feather.replace(); // Re-render icons if needed
+                        })
+                    }
+                }).catch(error => {
+                    // Network error (e.g., user is offline) 🌐
+                    console.error('Network error:', error);
+                    formFieldsContainer.classList.add('hidden');
+                    errorMessage.classList.remove('hidden');
+                    feather.replace(); // Re-render icons if needed
+                }).finally(() => {
+                    // Re-enable the button after a short delay
+                    setTimeout(() => {
+                       submitButton.disabled = false;
+                       submitButton.innerText = 'Send Message';
+                    }, 2000);
+                });
             });
 
             const initialSectionId = window.location.hash ? window.location.hash.substring(1) : 'home';

@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe Harbor Securities | Cybersecurity Solutions</title>
-    
-    <!-- Tailwind CSS -->
+    <meta name="description" content="Protect your business with Safe Harbor Securities. We offer AI-driven cybersecurity, penetration testing, and vCISO consulting to defend against ransomware and advanced digital threats.">
+    <meta name="keywords" content="cybersecurity, penetration testing, managed detection and response, MDR, vCISO, ransomware defense, AI security, compliance, SOC, ISO27K, HIPAA, PCI-DSS, threat intelligence">
+    <meta name="author" content="Safe Harbor Securities">
+    <meta name="robots" content="index, follow">
+	
+	<!-- canonical -->
+	<link rel="canonical" href="https://www.safeharborsec.tech/">
+
+    <!-- 	
+    ================================================================================
+    OPEN GRAPH (FOR SOCIAL MEDIA - LINKEDIN, FACEBOOK, ETC.)
+    - These tags control how your site appears when shared on social platforms.
+      The recommended image size is 1200x630 pixels.
+    ================================================================================
+    -->
+    <meta property="og:title" content="Safe Harbor Securities | AI-Driven Cybersecurity & Penetration Testing">
+    <meta property="og:description" content="Expert, AI-driven cybersecurity services to defend against the evolving landscape of digital threats.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.safeharborsec.tech/">
+    <meta property="og:image" content="https://www.safeharborsec.tech/SafeHarbor.png">
+    <meta property="og:site_name" content="Safe Harbor Securities">	
+	<!-- favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	
+    <!-- 
+    ================================================================================
+    TWITTER CARD
+    - These are specific tags for when your site is shared on X (Twitter).
+    ================================================================================
+	-->  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Safe Harbor Securities | AI-Driven Cybersecurity & Penetration Testing">
+    <meta name="twitter:description" content="Expert, AI-driven cybersecurity services to defend against the evolving landscape of digital threats.">
+    <meta name="twitter:image" content="https://www.safeharborsec.tech/SafeHarbor.png">
+    <meta name="twitter:site" content="@Gringo_Vidal">
+  
+	<!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
@@ -15,7 +52,48 @@
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-
+    <!-- 
+    ================================================================================
+    STRUCTURED DATA (SCHEMA.ORG - JSON-LD)
+    - This is a powerful SEO enhancement that explicitly tells Google what your
+      organization is about.
+    ================================================================================
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Safe Harbor Securities",
+      "url": "https://www.safeharborsec.tech/",
+      "logo": "https://www.safeharborsec.tech/SafeHarbor.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Patrick Nagel"
+      },
+      "description": "Safe Harbor Securities is a veteran-led consultancy providing strategic, high-impact cybersecurity leadership. We specialize in AI-driven threat defense, penetration testing, managed detection and response (MDR), and compliance consulting for standards like SOC, ISO27K, HIPAA, HITRUST and PCI-DSS.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Round Rock",
+        "addressRegion": "TX",
+        "postalCode": "78665",
+        "addressCountry": "US"
+      },
+      "telephone": "",
+      "sameAs": [
+        "https://www.linkedin.com/in/patrick-nagel-austin/",
+      ],
+      "serviceType": [
+        "Penetration Testing",
+        "Managed Detection and Response (MDR)",
+        "Cybersecurity Consulting",
+        "vCISO Services",
+        "AI Threat Counteroperations",
+        "Ransomware Defense",
+        "Security Awareness Training"
+      ]
+    }
+    </script>
     <!-- Custom Styles & Configuration -->
     <script>
         tailwind.config = {
@@ -361,8 +439,14 @@
         <!-- Blog Section -->
 		<section id="blog" class="section">
             <h2 class="text-4xl font-bold font-code text-center text-white">Threat Intelligence Feed</h2>
-            <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Insights from the front lines of cybersecurity. Analysis, trends, and actionable advice from our experts.</p>
-
+            <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Insights from the front lines of cybersecurity. Analysis, trends, and actionable expert advice.</p>
+			<div class="video-wrapper">
+				<video controls autoplay muted width="1280" height="720">
+					<!-- Add your .mp4 source here -->
+					<source src="Cyberpunk_Logo_Video_SafeHarbor.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
             <div class="mt-16">
                 <h3 class="text-3xl font-bold font-code text-center text-white">The Digital Watchtower Podcast</h3>
                 <p class="mt-2 text-md text-slate-gray text-center max-w-2xl mx-auto">Tune in as our experts break down the latest threats, interview industry leaders, and provide practical security advice.</p>
@@ -397,7 +481,8 @@
             </div>
 
             <div class="mt-24">
-                 <h3 class="text-3xl font-bold font-code text-center text-white">From the Blog</h3>
+                 <h3 class="text-3xl font-bold font-code text-center text-white">From the Blog
+				 </h3>
                 <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Blog Post Card -->
                     <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">

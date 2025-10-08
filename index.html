@@ -4,61 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe Harbor Securities | Cybersecurity Solutions</title>
+    
+    <!-- SEO & Metadata -->
     <meta name="description" content="Protect your business with Safe Harbor Securities. We offer AI-driven cybersecurity, penetration testing, and vCISO consulting to defend against ransomware and advanced digital threats.">
     <meta name="keywords" content="cybersecurity, penetration testing, managed detection and response, MDR, vCISO, ransomware defense, AI security, compliance, SOC, ISO27K, HIPAA, PCI-DSS, threat intelligence">
     <meta name="author" content="Safe Harbor Securities">
     <meta name="robots" content="index, follow">
-	
-	<!-- canonical -->
-	<link rel="canonical" href="https://www.safeharborsec.tech/">
+    <link rel="canonical" href="https://www.safeharborsec.tech/">
 
-    <!-- 	
-    ================================================================================
-    OPEN GRAPH (FOR SOCIAL MEDIA - LINKEDIN, FACEBOOK, ETC.)
-    - These tags control how your site appears when shared on social platforms.
-      The recommended image size is 1200x630 pixels.
-    ================================================================================
-    -->
+    <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Safe Harbor Securities | AI-Driven Cybersecurity & Penetration Testing">
     <meta property="og:description" content="Expert, AI-driven cybersecurity services to defend against the evolving landscape of digital threats.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.safeharborsec.tech/">
     <meta property="og:image" content="https://www.safeharborsec.tech/SafeHarbor.png">
-    <meta property="og:site_name" content="Safe Harbor Securities">	
-	<!-- favicon -->
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	
-    <!-- 
-    ================================================================================
-    TWITTER CARD
-    - These are specific tags for when your site is shared on X (Twitter).
-    ================================================================================
-	-->  
+    <meta property="og:site_name" content="Safe Harbor Securities">
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Safe Harbor Securities | AI-Driven Cybersecurity & Penetration Testing">
     <meta name="twitter:description" content="Expert, AI-driven cybersecurity services to defend against the evolving landscape of digital threats.">
     <meta name="twitter:image" content="https://www.safeharborsec.tech/SafeHarbor.png">
     <meta name="twitter:site" content="@Gringo_Vidal">
-  
-	<!-- Tailwind CSS -->
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Scripts & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-    <!-- 
-    ================================================================================
-    STRUCTURED DATA (SCHEMA.ORG - JSON-LD)
-    - This is a powerful SEO enhancement that explicitly tells Google what your
-      organization is about.
-    ================================================================================
-    -->
+
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -66,35 +47,14 @@
       "name": "Safe Harbor Securities",
       "url": "https://www.safeharborsec.tech/",
       "logo": "https://www.safeharborsec.tech/SafeHarbor.png",
-      "founder": {
-        "@type": "Person",
-        "name": "Patrick Nagel"
-      },
+      "founder": { "@type": "Person", "name": "Patrick Nagel" },
       "description": "Safe Harbor Securities is a veteran-led consultancy providing strategic, high-impact cybersecurity leadership. We specialize in AI-driven threat defense, penetration testing, managed detection and response (MDR), and compliance consulting for standards like SOC, ISO27K, HIPAA, HITRUST and PCI-DSS.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "Round Rock",
-        "addressRegion": "TX",
-        "postalCode": "78665",
-        "addressCountry": "US"
-      },
-      "telephone": "",
-      "sameAs": [
-        "https://www.linkedin.com/in/patrick-nagel-austin/"
-      ],
-      "serviceType": [
-        "Penetration Testing",
-        "Managed Detection and Response (MDR)",
-        "Cybersecurity Consulting",
-        "vCISO Services",
-        "AI Threat Counteroperations",
-        "Ransomware Defense",
-        "Security Awareness Training"
-      ]
+      "address": { "@type": "PostalAddress", "addressLocality": "Austin Metro", "addressRegion": "TX", "postalCode": "78665", "addressCountry": "US" },
+      "serviceType": ["Penetration Testing", "Managed Detection and Response (MDR)", "Cybersecurity Consulting", "vCISO Services", "AI Threat Counteroperations", "Ransomware Defense", "Security Awareness Training"]
     }
     </script>
-    <!-- Custom Styles & Configuration -->
+
+    <!-- Custom Tailwind Config & Styles -->
     <script>
         tailwind.config = {
             theme: {
@@ -123,40 +83,29 @@
             }
         }
     </script>
-
     <style>
-        /* Basic scrollbar styling for a more modern look */
-        ::-webkit-scrollbar {
-            width: 8px;
+        /* Modern Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1B263B; }
+        ::-webkit-scrollbar-thumb { background: #41E0D0; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #34b3a4; }
+
+        /* Active Navigation Link Styling */
+        .nav-link.active { color: #41E0D0; text-shadow: 0 0 5px #41E0D0; }
+        
+        /* Section Animation Styling */
+        .section-animate {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
-        ::-webkit-scrollbar-track {
-            background: #1B263B;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #41E0D0;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #34b3a4;
-        }
-        .section {
-            display: none; /* Hide all sections by default */
-        }
-        .section.active {
-            display: block; /* Show active section */
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        .nav-link.active {
-            color: #41E0D0;
-            text-shadow: 0 0 5px #41E0D0;
-        }
-        /* Ensure headline has a minimum height during animation */
-        #main-headline {
-            min-height: 100px; /* Adjust as needed for your font size */
+        .section-animate.is-visible {
+            opacity: 1;
+            transform: translateY(0);
         }
         .video-wrapper {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%; /* 16:9 */
             height: 0;
             overflow: hidden;
             max-width: 100%;
@@ -164,172 +113,83 @@
             margin: 2rem auto;
             border-radius: 0.5rem;
         }
-        .video-wrapper img {
+        .video-wrapper video, .video-wrapper iframe {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
         }
     </style>
 </head>
 <body class="bg-primary-dark font-sans text-light-slate">
 
-    <!-- Particle Background Canvas -->
     <canvas id="particle-bg" class="fixed top-0 left-0 w-full h-full -z-10"></canvas>
 
     <!-- Header -->
     <header class="bg-primary-dark/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-black/20">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-xl md:text-2xl font-bold font-code text-white hover:text-accent transition-colors duration-300 page-link">
-                Safe Harbor <span class="text-accent"> Securities</span>
+            <a href="#home" class="text-xl md:text-2xl font-bold font-code text-white hover:text-accent transition-colors duration-300">
+                Safe Harbor <span class="text-accent">Securities</span>
             </a>
-            <div class="hidden md:flex space-x-8">
-                <a href="#home" class="nav-link text-light-slate hover:text-accent transition-colors duration-300 page-link active">Home</a>
-                <a href="#about" class="nav-link text-light-slate hover:text-accent transition-colors duration-300 page-link">About Us</a>
-                <a href="#services" class="nav-link text-light-slate hover:text-accent transition-colors duration-300 page-link">Services</a>
-                <a href="#blog" class="nav-link text-light-slate hover:text-accent transition-colors duration-300 page-link">Threat Intel</a>
-                <a href="#contact" class="nav-link text-light-slate hover:text-accent transition-colors duration-300 page-link">Contact</a>
+            <div class="hidden md:flex space-x-8" id="desktop-nav">
+                <a href="#home" class="nav-link text-light-slate hover:text-accent transition-colors duration-300">Home</a>
+                <a href="#about" class="nav-link text-light-slate hover:text-accent transition-colors duration-300">About</a>
+                <a href="#services" class="nav-link text-light-slate hover:text-accent transition-colors duration-300">Services</a>
+                <a href="#blog" class="nav-link text-light-slate hover:text-accent transition-colors duration-300">Threat Intel</a>
+                <a href="#contact" class="nav-link text-light-slate hover:text-accent transition-colors duration-300">Contact</a>
             </div>
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Toggle mobile menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i data-feather="menu" class="w-6 h-6"></i>
                 </button>
             </div>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#home" class="block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark page-link">Home</a>
-            <a href="#about" class="block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark page-link">About Us</a>
-            <a href="#services" class="block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark page-link">Services</a>
-            <a href="#blog" class="block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark page-link">Threat Intel</a>
-            <a href="#contact" class="block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark page-link">Contact</a>
+            <a href="#home" class="mobile-link block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark">Home</a>
+            <a href="#about" class="mobile-link block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark">About</a>
+            <a href="#services" class="mobile-link block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark">Services</a>
+            <a href="#blog" class="mobile-link block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark">Threat Intel</a>
+            <a href="#contact" class="mobile-link block py-2 px-4 text-sm text-light-slate hover:bg-secondary-dark">Contact</a>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12 md:py-20">
+    <main class="container mx-auto px-6">
 
         <!-- Home Section -->
-        <section id="home" class="section active">
-            <div class="text-center min-h-[70vh] flex flex-col justify-center items-center">
-                <h1 id="main-headline" class="text-4xl md:text-6xl font-bold font-code text-white leading-tight">
-                    <span class="decryption-target">Your Digital Fortress,</span><br class="hidden md:block"/> <span class="text-accent decryption-target">Fortified.</span>
+        <section id="home" class="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center text-center">
+            <div class="max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold font-code text-white leading-tight">
+                    <span data-effect="decryption">Your Digital Fortress,</span><br class="hidden md:block"/> <span class="text-accent" data-effect="decryption">Fortified.</span>
                 </h1>
-                <p class="mt-6 text-lg md:text-xl text-slate-gray max-w-2xl mx-auto">
+                <p class="mt-6 text-lg md:text-xl text-slate-gray max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.5s;">
                     Proactive, AI-driven cybersecurity solutions to defend your business from the evolving landscape of digital threats. We are your shield in the digital age.
                 </p>
-                <a href="#contact" class="mt-8 bg-accent text-primary-dark font-bold py-3 px-8 rounded-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 page-link">
-                    Request a Free Consultation
-                </a>
-            </div>
-            
-            <!-- Services Overview -->
-            <div class="mt-24">
-                <h2 class="text-3xl font-bold font-code text-center text-white">Our Core Services</h2>
-                <div class="mt-12 grid md:grid-cols-3 gap-8">
-                    <!-- Service Card 1 -->
-                    <div class="bg-secondary-dark p-8 rounded-lg border border-slate-gray/20 hover:border-accent/50 transition-all duration-300 transform hover:-translate-y-2 text-center group">
-                        <i data-feather="compass" class="w-12 h-12 text-accent mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"></i>
-                        <h3 class="text-2xl font-bold font-code text-accent">Penetration Testing</h3>
-                        <p class="mt-4 text-slate-gray">Simulate real-world attacks to uncover critical vulnerabilities in your network, applications, and infrastructure before malicious actors do.</p>
-                        <a href="#services" class="mt-6 inline-block text-accent font-semibold page-link">Learn More &rarr;</a>
-                    </div>
-                    <!-- Service Card 2 -->
-                    <div class="bg-secondary-dark p-8 rounded-lg border border-slate-gray/20 hover:border-accent/50 transition-all duration-300 transform hover:-translate-y-2 text-center group">
-                        <i data-feather="shield" class="w-12 h-12 text-accent mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"></i>
-                        <h3 class="text-2xl font-bold font-code text-accent">Managed Security (MDR)</h3>
-                        <p class="mt-4 text-slate-gray">24/7/365 threat monitoring, detection, and response powered by our elite team of security analysts and cutting-edge AI.</p>
-                         <a href="#services" class="mt-6 inline-block text-accent font-semibold page-link">Learn More &rarr;</a>
-                    </div>
-                    <!-- Service Card 3 -->
-                    <div class="bg-secondary-dark p-8 rounded-lg border border-slate-gray/20 hover:border-accent/50 transition-all duration-300 transform hover:-translate-y-2 text-center group">
-                         <i data-feather="briefcase" class="w-12 h-12 text-accent mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"></i>
-                        <h3 class="text-2xl font-bold font-code text-accent">Cyber Consulting</h3>
-                        <p class="mt-4 text-slate-gray">Strategic guidance from vCISOs to build a robust security posture, achieve compliance, and align security with your business goals.</p>
-                         <a href="#services" class="mt-6 inline-block text-accent font-semibold page-link">Learn More &rarr;</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ransomware Section -->
-            <div class="mt-24 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-                <div class="bg-secondary-dark/50 p-8 rounded-lg">
-                    <img src="https://source.unsplash.com/500x300/?cybersecurity,lock" alt="A digital padlock symbolizing ransomware defense" class="rounded-lg shadow-lg w-full h-auto" loading="lazy">
-                </div>
-                <div>
-                    <h3 class="text-3xl font-bold font-code text-accent">Proactive Ransomware Defense</h3>
-                    <p class="mt-4 text-slate-gray leading-relaxed max-w-prose">Ransomware is more than just a threat; it's a business-ending event. We deploy a multi-layered defense strategy that focuses on prevention, immutable backups, and rapid recovery. Our solutions are designed to make your systems resilient to attack and ensure business continuity, even in a worst-case scenario.</p>
-                </div>
-            </div>
-
-            <!-- AI Solutions Section -->
-            <div class="mt-24 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-                <div class="md:order-2 bg-secondary-dark/50 p-8 rounded-lg">
-                    <img src="https://source.unsplash.com/500x300/?artificial-intelligence,brain" alt="Abstract network of nodes representing artificial intelligence" class="rounded-lg shadow-lg w-full h-auto" loading="lazy">
-                </div>
-                <div class="md:order-1">
-                    <h3 class="text-3xl font-bold font-code text-accent">AI-Powered Security Intelligence</h3>
-                    <p class="mt-4 text-slate-gray leading-relaxed max-w-prose">In the age of automated attacks, you need an intelligent defense. We leverage advanced AI and Machine Learning to analyze threat patterns, predict attacker behavior, and automate responses. This allows us to detect anomalies and neutralize sophisticated threats faster than human-led teams ever could.</p>
-                </div>
-            </div>
-
-            <!-- Security Awareness Training Section -->
-            <div class="mt-24">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold font-code text-white">Strengthening Your First Line of Defense</h2>
-                    <p class="mt-4 text-lg text-slate-gray max-w-3xl mx-auto">Technology is only part of the solution. Our Security Awareness Training programs transform your workforce from a potential target into a proactive and vigilant human firewall.</p>
-                </div>
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Training Topic Card -->
-                    <div class="bg-secondary-dark p-6 rounded-lg text-center border border-transparent hover:border-accent/50 transition-colors duration-300">
-                        <i data-feather="mail" class="w-10 h-10 text-accent mx-auto mb-4"></i>
-                        <h4 class="font-bold font-code text-white">Phishing & Scams</h4>
-                        <p class="mt-2 text-sm text-slate-gray">Train employees to recognize and report sophisticated phishing, smishing, and vishing attempts.</p>
-                    </div>
-                    <!-- Training Topic Card -->
-                    <div class="bg-secondary-dark p-6 rounded-lg text-center border border-transparent hover:border-accent/50 transition-colors duration-300">
-                        <i data-feather="lock" class="w-10 h-10 text-accent mx-auto mb-4"></i>
-                        <h4 class="font-bold font-code text-white">Ransomware Prevention</h4>
-                        <p class="mt-2 text-sm text-slate-gray">Educate on behaviors that lead to ransomware, from malicious links to unsafe software installation.</p>
-                    </div>
-                    <!-- Training Topic Card -->
-                    <div class="bg-secondary-dark p-6 rounded-lg text-center border border-transparent hover:border-accent/50 transition-colors duration-300">
-                        <i data-feather="search" class="w-10 h-10 text-accent mx-auto mb-4"></i>
-                        <h4 class="font-bold font-code text-white">OSINT Awareness</h4>
-                        <p class="mt-2 text-sm text-slate-gray">Show how attackers use public data (OSINT) to craft attacks and how to manage digital footprints.</p>
-                    </div>
-                    <!-- Training Topic Card -->
-                    <div class="bg-secondary-dark p-6 rounded-lg text-center border border-transparent hover:border-accent/50 transition-colors duration-300">
-                        <i data-feather="shield" class="w-10 h-10 text-accent mx-auto mb-4"></i>
-                        <h4 class="font-bold font-code text-white">Secure Practices</h4>
-                        <p class="mt-2 text-sm text-slate-gray">Instill best practices for password hygiene, data handling, and mobile security to build a strong culture.</p>
-                    </div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.8s;">
+                    <a href="#contact" class="mt-8 inline-block bg-accent text-primary-dark font-bold py-3 px-8 rounded-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105">
+                        Request a Free Consultation
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- About Us Section -->
-        <section id="about" class="section">
+        <section id="about" class="section-animate py-16 md:py-24">
             <h2 class="text-4xl font-bold font-code text-center text-white">The Mind Behind Your Security</h2>
             <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">A veteran-led consultancy dedicated to providing strategic, high-impact cybersecurity leadership to protect and empower your business.</p>
             
              <div class="mt-20 max-w-5xl mx-auto grid md:grid-cols-3 gap-8 md:gap-12 items-center">
                 <div class="md:col-span-1">
-                    <img src="https://placehold.co/400x400/1B263B/E0E1DD?text=CEO.PN" alt="Portrait of Patrick Nagel" class="w-full object-cover rounded-lg shadow-lg">
+                    <img src="https://placehold.co/400x400/1B263B/E0E1DD?text=CEO" alt="Portrait of Patrick Nagel, CEO" class="w-full object-cover rounded-lg shadow-lg">
                 </div>
                 <div class="md:col-span-2 bg-secondary-dark p-8 rounded-lg">
                     <div>
                         <h3 class="text-3xl font-bold text-white">Patrick Nagel</h3>
                         <p class="text-accent font-code text-lg">Founder & CEO</p>
                         <blockquote class="mt-6 text-slate-gray space-y-4 leading-relaxed border-l-4 border-accent pl-6 italic">
-                            <p>
-                                "At Safe Harbor Securities LLC, my mission has been to deliver robust cybersecurity and compliance solutions, ensuring clients' data, assets, and networks are ironclad against cyber threats. With over 4 years at the helm, our team excels in network architecture design, incident detection, and compliance audits, with a focus on SOC ISO27K, HIPAA-HITRUST and PCI-DSS standards."
-                            </p>
-                            <p>
-                                "Leveraging tools such as Terraform, Ansible and Chef for IaC, combined with our expertise in cloud-native security, we empower organizations to navigate the complexities of cybersecurity. Our approach integrates open-source and proprietary software for detection and response, establishing Safe Harbor Securities as a bastion of security in an era of digital vulnerabilities."
-                            </p>
+                            <p>"At Safe Harbor Securities LLC, my mission has been to deliver robust cybersecurity and compliance solutions, ensuring clients' data, assets, and networks are ironclad against cyber threats..."</p>
+                            <p>"Leveraging tools such as Terraform, Ansible and Chef for IaC, combined with our expertise in cloud-native security, we empower organizations to navigate the complexities of cybersecurity..."</p>
                         </blockquote>
                     </div>
                 </div>
@@ -337,202 +197,69 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="section">
+        <section id="services" class="section-animate py-16 md:py-24">
             <h2 class="text-4xl font-bold font-code text-center text-white">Our Security Offerings</h2>
             <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Comprehensive solutions tailored to your unique risk profile and business needs.</p>
             
             <div class="mt-16 space-y-12">
-                <!-- Service Detail Card: AI Threat Counteroperations -->
-                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 overflow-hidden">
-                    <div class="p-8 flex flex-col md:flex-row gap-8 items-start">
-                        <div class="w-full md:w-1/3">
-                            <h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="cpu" class="w-8 h-8 flex-shrink-0"></i>AI Threat Counteroperations</h3>
-                        </div>
-                        <div class="w-full md:w-2/3">
-                            <p class="text-light-slate max-w-prose">As organizations deploy AI and Large Language Models (LLMs), a new attack surface has emerged. We specialize in defending against next-generation threats targeting your intelligent systems, protecting the integrity of your AI/ML pipelines.</p>
-                            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-slate-gray">
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Adversarial AI Red Teaming</li>
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>LLM Security Audits</li>
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Deepfake Detection</li>
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>AI/ML Pipeline Security</li>
-                            </ul>
-                        </div>
-                    </div>
+                <!-- AI Threat Counteroperations -->
+                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 p-8 flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-full md:w-1/3"><h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="cpu" class="w-8 h-8 flex-shrink-0"></i>AI Threat Counteroperations</h3></div>
+                    <div class="w-full md:w-2/3"><p class="text-light-slate max-w-prose">We specialize in defending against next-generation threats targeting your intelligent systems, protecting the integrity of your AI/ML pipelines.</p></div>
                 </div>
-
-                <!-- Service Detail Card: Penetration Testing -->
-                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 overflow-hidden">
-                    <div class="p-8 flex flex-col md:flex-row gap-8 items-start">
-                        <div class="w-full md:w-1/3">
-                            <h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="target" class="w-8 h-8 flex-shrink-0"></i>Penetration Testing</h3>
-                        </div>
-                        <div class="w-full md:w-2/3">
-                            <p class="text-light-slate max-w-prose">Our certified ethical hackers use advanced techniques to simulate sophisticated cyberattacks, providing a detailed report with actionable insights to remediate weaknesses and strengthen your defenses.</p>
-                            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-slate-gray">
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Network & Web App Testing</li>
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Social Engineering</li>
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Cloud Security Assessments</li>
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Compliance-driven Testing</li>
-                            </ul>
-                        </div>
-                    </div>
+                <!-- Penetration Testing -->
+                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 p-8 flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-full md:w-1/3"><h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="target" class="w-8 h-8 flex-shrink-0"></i>Penetration Testing</h3></div>
+                    <div class="w-full md:w-2/3"><p class="text-light-slate max-w-prose">Our certified ethical hackers use advanced techniques to simulate sophisticated cyberattacks, providing a detailed report with actionable insights.</p></div>
                 </div>
-
-                <!-- Service Detail Card: Managed Detection & Response -->
-                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 overflow-hidden">
-                    <div class="p-8 flex flex-col md:flex-row gap-8 items-start">
-                        <div class="w-full md:w-1/3">
-                            <h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="shield" class="w-8 h-8 flex-shrink-0"></i>Managed Detection & Response</h3>
-                        </div>
-                        <div class="w-full md:w-2/3">
-                            <p class="text-light-slate max-w-prose">Our Security Operations Center (SOC) acts as your dedicated 24/7 cybersecurity team. We leverage AI to analyze threats in real-time, providing rapid incident response to contain and neutralize attacks.</p>
-                            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-slate-gray">
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>24/7 Endpoint & Network Monitoring</li>
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Proactive Threat Hunting</li>
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>SIEM & Log Management</li>
-                                <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-5 h-5 text-accent flex-shrink-0"></i>Incident Response & Forensics</li>
-                            </ul>
-                        </div>
-                    </div>
+                <!-- Managed Detection & Response -->
+                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 p-8 flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-full md:w-1/3"><h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="shield" class="w-8 h-8 flex-shrink-0"></i>Managed Detection & Response</h3></div>
+                    <div class="w-full md:w-2/3"><p class="text-light-slate max-w-prose">Our Security Operations Center (SOC) acts as your dedicated 24/7 cybersecurity team, leveraging AI to analyze threats in real-time.</p></div>
                 </div>
-
-                <!-- Service Detail Card: Cybersecurity Consulting -->
-                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 overflow-hidden">
-                    <div class="p-8">
-                        <div class="flex flex-col md:flex-row gap-8 items-start">
-                            <div class="w-full md:w-1/3">
-                                <h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="briefcase" class="w-8 h-8 flex-shrink-0"></i>Cybersecurity Consulting</h3>
-                            </div>
-                            <div class="w-full md:w-2/3">
-                                <p class="text-light-slate max-w-prose">Our virtual CISO (vCISO) services provide the strategic leadership you need to navigate the complex world of cybersecurity. We help you develop security roadmaps, create effective policies, and ensure you meet regulatory compliance standards.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pb-8 px-8 pt-6 border-t border-slate-gray/20 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-                        <!-- Consulting Sub-Service -->
-                        <div class="flex items-start gap-4">
-                            <i data-feather="clipboard" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-white">Governance, Risk & Compliance (GRC)</h4>
-                                <p class="mt-1 text-slate-gray text-sm">Navigate regulations like ISO 27001 and SOC 2, building a framework that aligns security with business objectives and keeps you audit-ready.</p>
-                            </div>
-                        </div>
-                        <!-- Consulting Sub-Service -->
-                        <div class="flex items-start gap-4">
-                            <i data-feather="credit-card" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-white">PCI DSS Compliance</h4>
-                                <p class="mt-1 text-slate-gray text-sm">For businesses handling cardholder data, we provide end-to-end guidance, from gap analysis to your Report on Compliance (ROC).</p>
-                            </div>
-                        </div>
-                        <!-- Consulting Sub-Service -->
-                        <div class="flex items-start gap-4">
-                            <i data-feather="code" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-white">OWASP & Secure Development</h4>
-                                <p class="mt-1 text-slate-gray text-sm">Integrate the OWASP Top 10 into your development lifecycle to ensure your code is secure from the ground up.</p>
-                            </div>
-                        </div>
-                        <!-- Consulting Sub-Service -->
-                        <div class="flex items-start gap-4">
-                            <i data-feather="search" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-white">Open-Source Intelligence (OSINT)</h4>
-                                <p class="mt-1 text-slate-gray text-sm">Discover your public exposure, identifying potential attack vectors and exposed data before attackers can exploit them.</p>
-                            </div>
-                        </div>
-                        <!-- Consulting Sub-Service -->
-                        <div class="flex items-start gap-4">
-                            <i data-feather="users" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-white">Security Awareness Training (SATE)</h4>
-                                <p class="mt-1 text-slate-gray text-sm">Our engaging training and phishing simulations turn your employees into a proactive line of defense.</p>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Cybersecurity Consulting -->
+                <div class="bg-secondary-dark rounded-lg border border-slate-gray/20 p-8 flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-full md:w-1/3"><h3 class="text-2xl font-bold font-code text-accent flex items-center gap-4"><i data-feather="briefcase" class="w-8 h-8 flex-shrink-0"></i>Cybersecurity Consulting</h3></div>
+                    <div class="w-full md:w-2/3"><p class="text-light-slate max-w-prose">Our virtual CISO (vCISO) services provide the strategic leadership you need to navigate the complex world of cybersecurity and regulatory compliance.</p></div>
                 </div>
             </div>
         </section>
 
         <!-- Blog Section -->
-		<section id="blog" class="section">
+		<section id="blog" class="section-animate py-16 md:py-24">
             <h2 class="text-4xl font-bold font-code text-center text-white">Threat Intelligence Feed</h2>
             <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Insights from the front lines of cybersecurity. Analysis, trends, and actionable expert advice.</p>
-			<div class="video-wrapper" style="background-color: transparent;">
-				<video controls autoplay muted width="1280" height="720">				
+            
+			<div class="video-wrapper">
+				<video controls autoplay muted playsinline width="1280" height="720">				
 					<source src="https://www.safeharborsec.tech/Cyberpunk_Logo_Video_SafeHarbor.mp4" type="video/mp4">									
 					Your browser does not support the video tag.
 				</video>
 			</div>
+			
             <div class="mt-16">
                 <h3 class="text-3xl font-bold font-code text-center text-white">The Digital Watchtower Podcast</h3>
-                <p class="mt-2 text-md text-slate-gray text-center max-w-2xl mx-auto">Tune in as our experts break down the latest threats, interview industry leaders, and provide practical security advice.</p>
                 <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <!-- Podcast Episode -->
-                    <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg p-6">
+                    <!-- Podcast Episode 1 -->
+                    <div class="bg-secondary-dark rounded-lg p-6">
                         <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="mic" class="w-4 h-4"></i>Episode 01</p>
                         <h4 class="mt-1 text-xl font-bold text-white">The Rise of Adversarial AI</h4>
-                        <p class="mt-2 text-slate-gray text-sm">We discuss how attackers are weaponizing AI and what businesses can do to prepare for the next wave of intelligent threats.</p>
-                        <audio controls class="w-full mt-4">
-                            <source src="https://www.safeharborsec.tech/HumanHacking+AIThreats_YourFrontlineGuidetoCybersecurity.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
+                        <audio controls class="w-full mt-4"><source src="https://www.safeharborsec.tech/HumanHacking+AIThreats_YourFrontlineGuidetoCybersecurity.mp3" type="audio/mpeg"></audio>
                     </div>
-                    <!-- Podcast Episode -->
-                    <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg p-6">
+                    <!-- Podcast Episode 2 -->
+                    <div class="bg-secondary-dark rounded-lg p-6">
                          <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="mic" class="w-4 h-4"></i>Episode 02</p>
                          <h4 class="mt-1 text-xl font-bold text-white">Securing the Human Element</h4>
-                         <p class="mt-2 text-slate-gray text-sm">A conversation with a social engineering expert on the psychology of phishing and building a culture of security.</p>
-                         <audio controls class="w-full mt-4">
-                            <source src="https://www.safeharborsec.tech/HumanHacking_TheExplodingCyberThreatandHowtoFightBack.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-24">
-                 <h3 class="text-3xl font-bold font-code text-center text-white">From the Blog
-				 </h3>
-                <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Blog Post Card -->
-                    <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">
-                        <img src="https://www.safeharborsec.tech/chart.png" alt="Screen with code and data charts for analysis" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
-                        <div class="p-6">
-                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="alert-triangle" class="w-4 h-4"></i>Ransomware</p>
-                            <h3 class="mt-2 text-xl font-bold text-white">Anatomy of the "LockForge" Ransomware Attack</h3>
-                            <p class="mt-3 text-slate-gray">A deep dive into the latest ransomware strain targeting mid-sized enterprises and how to defend against its unique TTPs.</p>
-                            <a href="#" class="mt-4 inline-block font-semibold text-accent">Read More &rarr;</a>
-                        </div>
-                    </div>
-                    <!-- Blog Post Card -->
-                    <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">
-                        <img src="https://www.safeharborsec.tech/anon.png" alt="Anonymous hacker figure in a hoodie" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
-                        <div class="p-6">
-                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="users" class="w-4 h-4"></i>Social Engineering</p>
-                            <h3 class="mt-2 text-xl font-bold text-white">Beyond the Bait: The Rise of AI-Powered Phishing</h3>
-                            <p class="mt-3 text-slate-gray">Cybercriminals are using generative AI to create hyper-realistic phishing emails. Learn to spot the new red flags.</p>
-                            <a href="#" class="mt-4 inline-block font-semibold text-accent">Read More &rarr;</a>
-                        </div>
-                    </div>
-                    <!-- Blog Post Card -->
-                    <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">
-                        <img src="https://www.safeharborsec.tech/datacenter.png" alt="Server racks in a data center representing cloud security" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
-                        <div class="p-6">
-                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="cloud" class="w-4 h-4"></i>Cloud Security</p>
-                            <h3 class="mt-2 text-xl font-bold text-white">Top 5 Misconfigurations in AWS That Lead to Breaches</h3>
-                            <p class="mt-3 text-slate-gray">A checklist for cloud administrators to secure their AWS environments and avoid common, costly security mistakes.</p>
-                            <a href="#" class="mt-4 inline-block font-semibold text-accent">Read More &rarr;</a>
-                        </div>
+                         <audio controls class="w-full mt-4"><source src="https://www.safeharborsec.tech/HumanHacking_TheExplodingCyberThreatandHowtoFightBack.mp3" type="audio/mpeg"></audio>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section">
+        <section id="contact" class="section-animate py-16 md:py-24">
             <h2 class="text-4xl font-bold font-code text-center text-white">Secure Your Future</h2>
-            <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Ready to elevate your security posture? Reach out to our experts for a no-obligation consultation and vulnerability assessment.</p>
+            <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Ready to elevate your security posture? Reach out for a no-obligation consultation.</p>
 
             <div class="mt-16 max-w-2xl mx-auto bg-secondary-dark p-8 rounded-lg border border-slate-gray/20">
                 <form id="contact-form" action="https://formspree.io/f/mblzrvew" method="POST">
@@ -540,37 +267,19 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label for="name" class="block text-sm font-code text-slate-gray">Full Name</label>
-                                <input type="text" id="name" name="Name" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" required>
+                                <input type="text" id="name" name="Name" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" required>
                             </div>
                             <div>
                                 <label for="company" class="block text-sm font-code text-slate-gray">Company</label>
-                                <input type="text" id="company" name="Company" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent">
+                                <input type="text" id="company" name="Company" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent">
                             </div>
                         </div>
-                        <div class="mt-6">
-                            <label for="email" class="block text-sm font-code text-slate-gray">Email Address</label>
-                            <input type="email" id="email" name="Email" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" required>
-                        </div>
-                        <div class="mt-6">
-                            <label for="message" class="block text-sm font-code text-slate-gray">Message</label>
-                            <textarea id="message" name="Message" rows="4" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" placeholder="Tell us about your security challenges..." required></textarea>
-                        </div>
-                        <div class="mt-6 text-center">
-                            <button id="submit-button" type="submit" class="w-full md:w-auto bg-accent text-primary-dark font-bold py-3 px-12 rounded-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:scale-100">
-                                Send Message
-                            </button>
-                        </div>
+                        <div class="mt-6"><label for="email" class="block text-sm font-code text-slate-gray">Email Address</label><input type="email" id="email" name="Email" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" required></div>
+                        <div class="mt-6"><label for="message" class="block text-sm font-code text-slate-gray">Message</label><textarea id="message" name="Message" rows="4" class="mt-1 block w-full bg-primary-dark border border-slate-gray/50 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-accent focus:border-accent" placeholder="Tell us about your security challenges..." required></textarea></div>
+                        <div class="mt-6 text-center"><button id="submit-button" type="submit" class="w-full md:w-auto bg-accent text-primary-dark font-bold py-3 px-12 rounded-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:scale-100">Send Message</button></div>
                     </div>
-                     <div id="success-message" class="hidden text-center">
-                        <i data-feather="check-circle" class="w-16 h-16 text-accent mx-auto mb-4"></i>
-                        <h3 class="text-2xl font-bold text-white">Thank You!</h3>
-                        <p class="mt-2 text-slate-gray">Your message has been sent. Our team will get back to you shortly.</p>
-                    </div>
-                     <div id="error-message" class="hidden text-center">
-                        <i data-feather="alert-triangle" class="w-16 h-16 text-red-500 mx-auto mb-4"></i>
-                        <h3 class="text-2xl font-bold text-white">Submission Failed</h3>
-                        <p class="mt-2 text-slate-gray">Something went wrong. Please try again later or contact us directly.</p>
-                    </div>
+                     <div id="success-message" class="hidden text-center"><i data-feather="check-circle" class="w-16 h-16 text-accent mx-auto mb-4"></i><h3 class="text-2xl font-bold text-white">Thank You!</h3><p class="mt-2 text-slate-gray">Your message has been sent. Our team will get back to you shortly.</p></div>
+                     <div id="error-message" class="hidden text-center"><i data-feather="alert-triangle" class="w-16 h-16 text-red-500 mx-auto mb-4"></i><h3 class="text-2xl font-bold text-white">Submission Failed</h3><p class="mt-2 text-slate-gray">Something went wrong. Please try again later.</p></div>
                 </form>
             </div>
         </section>
@@ -585,74 +294,46 @@
         </div>
     </footer>
 
+    <!-- Main Application Logic -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-             // Initialize Feather Icons
-            feather.replace();
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- Initialize Feather Icons ---
+        feather.replace();
 
-            // --- Particle Background Logic ---
-            const particleCanvas = document.getElementById('particle-bg');
+        // --- Particle Background Logic (Enhanced) ---
+        const particleCanvas = document.getElementById('particle-bg');
+        if (particleCanvas) {
             const particleCtx = particleCanvas.getContext('2d');
-            particleCanvas.width = window.innerWidth;
-            particleCanvas.height = window.innerHeight;
             let particlesArray;
-
+            const setupCanvas = () => {
+                particleCanvas.width = window.innerWidth;
+                particleCanvas.height = window.innerHeight;
+            };
             class Particle {
-                constructor(x, y, directionX, directionY, size, color) {
-                    this.x = x;
-                    this.y = y;
-                    this.directionX = directionX;
-                    this.directionY = directionY;
-                    this.size = size;
-                    this.color = color;
-                }
-                draw() {
-                    particleCtx.beginPath();
-                    particleCtx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-                    particleCtx.fillStyle = '#778DA9';
-                    particleCtx.fill();
-                }
-                update() {
-                    if (this.x > particleCanvas.width || this.x < 0) { this.directionX = -this.directionX; }
-                    if (this.y > particleCanvas.height || this.y < 0) { this.directionY = -this.directionY; }
-                    this.x += this.directionX;
-                    this.y += this.directionY;
-                    this.draw();
-                }
+                constructor(x, y, dirX, dirY, size, color) { this.x=x; this.y=y; this.dirX=dirX; this.dirY=dirY; this.size=size; this.color=color; }
+                draw() { particleCtx.beginPath(); particleCtx.arc(this.x, this.y, this.size, 0, Math.PI*2); particleCtx.fillStyle=this.color; particleCtx.fill(); }
+                update() { if(this.x>particleCanvas.width||this.x<0)this.dirX=-this.dirX; if(this.y>particleCanvas.height||this.y<0)this.dirY=-this.dirY; this.x+=this.dirX; this.y+=this.dirY; this.draw(); }
             }
-
-            function initParticles() {
+            const initParticles = () => {
                 particlesArray = [];
-                // Fewer particles on smaller screens for better performance
-                let numberOfParticles = window.innerWidth < 768 ? 30 : (particleCanvas.height * particleCanvas.width) / 9000;
-                for (let i = 0; i < numberOfParticles; i++) {
-                    let size = (Math.random() * 2) + 1;
-                    let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
-                    let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
-                    let directionX = (Math.random() * .4) - .2;
-                    let directionY = (Math.random() * .4) - .2;
-                    particlesArray.push(new Particle(x, y, directionX, directionY, size, '#778DA9'));
+                const numParticles = window.innerWidth < 768 ? 30 : 60; // Increased particle count
+                for (let i = 0; i < numParticles; i++) {
+                    const size = Math.random() * 2 + 1;
+                    const x = Math.random() * (particleCanvas.width - size * 2) + size * 2;
+                    const y = Math.random() * (particleCanvas.height - size * 2) + size * 2;
+                    const dirX = (Math.random() * 0.3) - 0.15;
+                    const dirY = (Math.random() * 0.3) - 0.15;
+                    particlesArray.push(new Particle(x, y, dirX, dirY, size, '#778DA9')); // slate-gray
                 }
-            }
-
-            function animateParticles() {
-                requestAnimationFrame(animateParticles);
-                particleCtx.clearRect(0, 0, innerWidth, innerHeight);
-                for (let i = 0; i < particlesArray.length; i++) {
-                    particlesArray[i].update();
-                }
-                connectParticles();
-            }
-
-            function connectParticles() {
+            };
+            const connectParticles = () => {
                 let opacityValue = 1;
                 for (let a = 0; a < particlesArray.length; a++) {
                     for (let b = a; b < particlesArray.length; b++) {
-                        let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x)) +
-                            ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
-                        if (distance < (particleCanvas.width / 7) * (particleCanvas.height / 7)) {
-                            opacityValue = 1 - (distance / 20000);
-                            particleCtx.strokeStyle = `rgba(65, 224, 208, ${opacityValue})`;
+                        const distance = Math.sqrt(Math.pow(particlesArray[a].x - particlesArray[b].x, 2) + Math.pow(particlesArray[a].y - particlesArray[b].y, 2));
+                        if (distance < (particleCanvas.width / 10)) {
+                            opacityValue = 1 - (distance / 150);
+                            particleCtx.strokeStyle = `rgba(65, 224, 208, ${opacityValue})`; // accent color
                             particleCtx.lineWidth = 1;
                             particleCtx.beginPath();
                             particleCtx.moveTo(particlesArray[a].x, particlesArray[a].y);
@@ -661,159 +342,120 @@
                         }
                     }
                 }
-            }
-            
-            window.addEventListener('resize', () => {
-                particleCanvas.width = innerWidth;
-                particleCanvas.height = innerHeight;
-                initParticles();
-            });
+            };
+            const animateParticles = () => {
+                requestAnimationFrame(animateParticles);
+                particleCtx.clearRect(0, 0, particleCanvas.width, particleCanvas.height);
+                particlesArray.forEach(p => p.update());
+                connectParticles(); // Re-enabled the plexus effect
+            };
+            setupCanvas(); initParticles(); animateParticles();
+            window.addEventListener('resize', () => { setupCanvas(); initParticles(); });
+        }
 
-            initParticles();
-            animateParticles();
-
-            // --- Decryption Effect Logic ---
+        // --- Decryption Text Effect ---
+        document.querySelectorAll('[data-effect="decryption"]').forEach(el => {
             const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789*&^%$#@!";
-            function runDecryptionEffect(element) {
-                let interval = null;
-                const originalText = element.dataset.originalText;
-                let iteration = 0;
-                
-                clearInterval(interval);
-                
+            const originalText = el.innerText;
+            let interval = null, iteration = 0;
+            setTimeout(() => {
                 interval = setInterval(() => {
-                    element.innerText = originalText
-                        .split("")
-                        .map((letter, index) => {
-                            if(index < iteration) {
-                                return originalText[index];
-                            }
-                            if(originalText[index] === ' ') {
-                                return ' ';
-                            }
-                            return letters[Math.floor(Math.random() * letters.length)]
-                        })
-                        .join("");
-                    
-                    if(iteration >= originalText.length){
-                        clearInterval(interval);
-                    }
-                    
+                    el.innerText = originalText.split("").map((letter, index) => (index < iteration) ? originalText[index] : (letter === ' ' ? ' ' : letters[Math.floor(Math.random() * letters.length)])).join("");
+                    if (iteration >= originalText.length) clearInterval(interval);
                     iteration += 1 / 3;
                 }, 30);
-            }
+            }, 500); // Delay start for visual effect
+        });
 
-            // --- Page Navigation Logic ---
-            const sections = document.querySelectorAll('.section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            const pageLinks = document.querySelectorAll('.page-link');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const decryptionTargets = document.querySelectorAll('.decryption-target');
-            const contactForm = document.getElementById('contact-form');
-            const formFieldsContainer = document.getElementById('form-fields-container');
-            const successMessage = document.getElementById('success-message');
-            const errorMessage = document.getElementById('error-message');
-            const submitButton = document.getElementById('submit-button');
-
-
-            // Store original text for decryption targets
-            decryptionTargets.forEach(target => {
-                target.dataset.originalText = target.innerText;
-                target.innerText = ''; // Clear text initially
+        // --- Mobile Menu ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
             });
-
-            function showSection(id) {
-                sections.forEach(section => {
-                    section.classList.remove('active');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
                 });
+            });
+        }
 
-                const targetSection = document.getElementById(id);
-                if (targetSection) {
-                    targetSection.classList.add('active');
-                }
-
-                navLinks.forEach(link => {
-                    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-                });
-                
-                mobileMenu.classList.add('hidden');
-                window.scrollTo(0, 0);
-
-                // Trigger decryption effect if on home page
-                if (id === 'home') {
-                    decryptionTargets.forEach(target => {
-                         // A small delay to allow the section to become visible
-                        setTimeout(() => runDecryptionEffect(target), 100);
+        // --- Active Nav Link on Scroll ---
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const observerOptions = { rootMargin: '-40% 0px -60% 0px' };
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = `#${entry.target.id}`;
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        link.removeAttribute('aria-current');
+                        if (link.getAttribute('href') === activeId) {
+                            link.classList.add('active');
+                            link.setAttribute('aria-current', 'page');
+                        }
                     });
                 }
-            }
-
-            pageLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    showSection(targetId);
-                });
             });
+        }, observerOptions);
+        sections.forEach(section => sectionObserver.observe(section));
 
-            mobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
+        // --- Animate Sections on Scroll-in ---
+        const animationObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
             });
-            
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.section-animate').forEach(section => animationObserver.observe(section));
+
+        // --- Contact Form ---
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
-                e.preventDefault(); // Prevent the default form submission
-
+                e.preventDefault();
                 const form = e.target;
                 const data = new FormData(form);
-
+                const submitButton = document.getElementById('submit-button');
+                const formFieldsContainer = document.getElementById('form-fields-container');
+                const successMessage = document.getElementById('success-message');
+                const errorMessage = document.getElementById('error-message');
+                
                 submitButton.disabled = true;
                 submitButton.innerText = 'Sending...';
 
-                // Use fetch() to send the data to Formspree
-                fetch(form.action, {
-                    method: form.method,
-                    body: data,
-                    headers: {
-                        'Accept': 'application/json' // Tells Formspree to reply with JSON
-                    }
-                }).then(response => {
+                fetch(form.action, { method: form.method, body: data, headers: { 'Accept': 'application/json' }})
+                .then(response => {
                     if (response.ok) {
-                        // Success! ✅
-                        form.reset(); // clear the form fields
+                        form.reset();
                         formFieldsContainer.classList.add('hidden');
                         successMessage.classList.remove('hidden');
-                        feather.replace(); // Re-render icons if needed
                     } else {
-                        // Server returned an error 😥
-                        response.json().then(data => {
-                            if (Object.hasOwn(data, 'errors')) {
-                            // This can display more specific errors from Formspree if you want
-                            console.error(data.errors.map(error => error.message).join(", "));
-                            }
-                            formFieldsContainer.classList.add('hidden');
-                            errorMessage.classList.remove('hidden');
-                            feather.replace(); // Re-render icons if needed
-                        })
+                        formFieldsContainer.classList.add('hidden');
+                        errorMessage.classList.remove('hidden');
                     }
+                    feather.replace();
                 }).catch(error => {
-                    // Network error (e.g., user is offline) 🌐
-                    console.error('Network error:', error);
                     formFieldsContainer.classList.add('hidden');
                     errorMessage.classList.remove('hidden');
-                    feather.replace(); // Re-render icons if needed
+                    feather.replace();
                 }).finally(() => {
-                    // Re-enable the button after a short delay
                     setTimeout(() => {
                        submitButton.disabled = false;
                        submitButton.innerText = 'Send Message';
-                    }, 2000);
+                    }, 3000);
                 });
             });
-
-            const initialSectionId = window.location.hash ? window.location.hash.substring(1) : 'home';
-            showSection(initialSectionId);
-        });
+        }
+    });
     </script>
 
 </body>

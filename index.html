@@ -154,6 +154,24 @@
         #main-headline {
             min-height: 100px; /* Adjust as needed for your font size */
         }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 2rem auto;
+            border-radius: 0.5rem;
+        }
+        .video-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body class="bg-primary-dark font-sans text-light-slate">
@@ -175,7 +193,7 @@
                 <a href="#contact" class="nav-link text-light-slate hover:text-accent transition-colors duration-300 page-link">Contact</a>
             </div>
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Toggle mobile menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
@@ -238,7 +256,7 @@
             <!-- Ransomware Section -->
             <div class="mt-24 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
                 <div class="bg-secondary-dark/50 p-8 rounded-lg">
-                    <img src="https://placehold.co/500x300/0D1B2A/41E0D0?text=Ransomware+Defense" alt="Ransomware Defense Graphic" class="rounded-lg shadow-lg">
+                    <img src="https://source.unsplash.com/500x300/?cybersecurity,lock" alt="A digital padlock symbolizing ransomware defense" class="rounded-lg shadow-lg w-full h-auto" loading="lazy">
                 </div>
                 <div>
                     <h3 class="text-3xl font-bold font-code text-accent">Proactive Ransomware Defense</h3>
@@ -249,7 +267,7 @@
             <!-- AI Solutions Section -->
             <div class="mt-24 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
                 <div class="md:order-2 bg-secondary-dark/50 p-8 rounded-lg">
-                    <img src="https://placehold.co/500x300/0D1B2A/E0E1DD?text=AI+Solutions" alt="AI Security Solutions Graphic" class="rounded-lg shadow-lg">
+                    <img src="https://source.unsplash.com/500x300/?artificial-intelligence,brain" alt="Abstract network of nodes representing artificial intelligence" class="rounded-lg shadow-lg w-full h-auto" loading="lazy">
                 </div>
                 <div class="md:order-1">
                     <h3 class="text-3xl font-bold font-code text-accent">AI-Powered Security Intelligence</h3>
@@ -441,41 +459,34 @@
             <h2 class="text-4xl font-bold font-code text-center text-white">Threat Intelligence Feed</h2>
             <p class="mt-4 text-lg text-slate-gray text-center max-w-3xl mx-auto">Insights from the front lines of cybersecurity. Analysis, trends, and actionable expert advice.</p>
 			<div class="video-wrapper">
-				<video controls autoplay muted width="1280" height="720">
-					<!-- Add your .mp4 source here -->
-					<source src="Cyberpunk_Logo_Video_SafeHarbor.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
+                <!-- Replaced local video with a responsive, theme-appropriate static image -->
+				<img src="https://source.unsplash.com/1280x720/?cyberpunk,city" alt="Cyberpunk city skyline representing modern threat intelligence">
 			</div>
             <div class="mt-16">
                 <h3 class="text-3xl font-bold font-code text-center text-white">The Digital Watchtower Podcast</h3>
                 <p class="mt-2 text-md text-slate-gray text-center max-w-2xl mx-auto">Tune in as our experts break down the latest threats, interview industry leaders, and provide practical security advice.</p>
                 <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <!-- Podcast Episode -->
-                    <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg">
-                        <video class="w-full" controls poster="https://placehold.co/600x338/0D1B2A/41E0D0?text=Episode+1">
-                            <!-- Add your .mp4 source here -->
-                            <source src="HumanHacking+AIThreats_YourFrontlineGuidetoCybersecurity.mp3" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="p-6">
-                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="mic" class="w-4 h-4"></i>Episode 01</p>
-                            <h4 class="mt-1 text-xl font-bold text-white">The Rise of Adversarial AI</h4>
-                            <p class="mt-2 text-slate-gray text-sm">We discuss how attackers are weaponizing AI and what businesses can do to prepare for the next wave of intelligent threats.</p>
-                        </div>
+                    <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg p-6">
+                        <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="mic" class="w-4 h-4"></i>Episode 01</p>
+                        <h4 class="mt-1 text-xl font-bold text-white">The Rise of Adversarial AI</h4>
+                        <p class="mt-2 text-slate-gray text-sm">We discuss how attackers are weaponizing AI and what businesses can do to prepare for the next wave of intelligent threats.</p>
+                        <!-- NOTE: Local audio files like 'HumanHacking+AIThreats_YourFrontlineGuidetoCybersecurity.mp3' must be hosted to be playable. -->
+                        <audio controls class="w-full mt-4">
+                            <source src="HumanHacking+AIThreats_YourFrontlineGuidetoCybersecurity.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
                     </div>
                     <!-- Podcast Episode -->
-                    <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg">
-                         <video class="w-full" controls poster="https://placehold.co/600x338/0D1B2A/E0E1DD?text=Episode+2">
-                            <!-- Add your .mp4 source here -->
-                            <source src="HumanHacking_TheExplodingCyberThreatandHowtoFightBack.mp3" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="p-6">
-                            <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="mic" class="w-4 h-4"></i>Episode 02</p>
-                            <h4 class="mt-1 text-xl font-bold text-white">Securing the Human Element</h4>
-                            <p class="mt-2 text-slate-gray text-sm">A conversation with a social engineering expert on the psychology of phishing and building a culture of security.</p>
-                        </div>
+                    <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg p-6">
+                         <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="mic" class="w-4 h-4"></i>Episode 02</p>
+                         <h4 class="mt-1 text-xl font-bold text-white">Securing the Human Element</h4>
+                         <p class="mt-2 text-slate-gray text-sm">A conversation with a social engineering expert on the psychology of phishing and building a culture of security.</p>
+                         <!-- NOTE: Local audio files like 'HumanHacking_TheExplodingCyberThreatandHowtoFightBack.mp3' must be hosted to be playable. -->
+                         <audio controls class="w-full mt-4">
+                            <source src="HumanHacking_TheExplodingCyberThreatandHowtoFightBack.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
                     </div>
                 </div>
             </div>
@@ -486,7 +497,7 @@
                 <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Blog Post Card -->
                     <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">
-                        <img src="https://placehold.co/600x400/0D1B2A/41E0D0?text=Analysis" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://source.unsplash.com/600x400/?code,analysis" alt="Screen with code and data charts for analysis" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="p-6">
                             <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="alert-triangle" class="w-4 h-4"></i>Ransomware</p>
                             <h3 class="mt-2 text-xl font-bold text-white">Anatomy of the "LockForge" Ransomware Attack</h3>
@@ -496,7 +507,7 @@
                     </div>
                     <!-- Blog Post Card -->
                     <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">
-                        <img src="https://placehold.co/600x400/0D1B2A/E0E1DD?text=Phishing" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://source.unsplash.com/600x400/?phishing,hacker" alt="Anonymous hacker figure in a hoodie" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="p-6">
                             <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="users" class="w-4 h-4"></i>Social Engineering</p>
                             <h3 class="mt-2 text-xl font-bold text-white">Beyond the Bait: The Rise of AI-Powered Phishing</h3>
@@ -506,7 +517,7 @@
                     </div>
                     <!-- Blog Post Card -->
                     <div class="bg-secondary-dark rounded-lg overflow-hidden shadow-lg group">
-                        <img src="https://placehold.co/600x400/0D1B2A/778DA9?text=Cloud+Security" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://source.unsplash.com/600x400/?cloud,security" alt="Server racks in a data center representing cloud security" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="p-6">
                             <p class="text-sm text-accent font-code flex items-center gap-2"><i data-feather="cloud" class="w-4 h-4"></i>Cloud Security</p>
                             <h3 class="mt-2 text-xl font-bold text-white">Top 5 Misconfigurations in AWS That Lead to Breaches</h3>
@@ -612,7 +623,8 @@
 
             function initParticles() {
                 particlesArray = [];
-                let numberOfParticles = (particleCanvas.height * particleCanvas.width) / 9000;
+                // Fewer particles on smaller screens for better performance
+                let numberOfParticles = window.innerWidth < 768 ? 30 : (particleCanvas.height * particleCanvas.width) / 9000;
                 for (let i = 0; i < numberOfParticles; i++) {
                     let size = (Math.random() * 2) + 1;
                     let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
@@ -806,3 +818,4 @@
 
 </body>
 </html>
+
